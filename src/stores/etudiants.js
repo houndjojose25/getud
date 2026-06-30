@@ -55,16 +55,8 @@ export const useEtudiantsStore = defineStore('etudiants', {
                     this.etudiants = [];
                     this.prochainId = 1;
                 }
-            } else {
-                // Données de démonstration
-                this.etudiants = [
-                    { id: 1, nom: 'Dupont', prenom: 'Jean', age: 20, classe: 'L1', genre: 'Masculin', email: 'jean@email.com' },
-                    { id: 2, nom: 'Martin', prenom: 'Marie', age: 22, classe: 'L2', genre: 'Féminin', email: 'marie@email.com' },
-                    { id: 3, nom: 'Durand', prenom: 'Pierre', age: 19, classe: 'L1', genre: 'Masculin', email: 'pierre@email.com' }
-                ];
-                this.prochainId = 4;
-                this.sauvegarder();
             }
+
         },
 
         // Sauvegarder dans localStorage
